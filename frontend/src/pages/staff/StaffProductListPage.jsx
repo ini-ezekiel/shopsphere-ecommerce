@@ -1,5 +1,14 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { Boxes, ImagePlus, Pencil, Plus, Search, Tags, X } from "lucide-react";
+import {
+  Boxes,
+  ImagePlus,
+  Pencil,
+  Plus,
+  Search,
+  Tag,
+  Tags,
+  X,
+} from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
@@ -13,6 +22,7 @@ import {
 import StaffCategoryManager from "../../components/staff/StaffCategoryManager";
 import StaffProductImageManager from "../../components/staff/StaffProductImageManager";
 import StaffProductVariantManager from "../../components/staff/StaffProductVariantManager";
+import StaffBrandManager from "../../components/staff/StaffBrandManager";
 import { getApiError } from "../../lib/errors";
 import { formatNaira } from "../../lib/format";
 
@@ -58,6 +68,7 @@ function StaffProductListPage() {
   const [slugWasEdited, setSlugWasEdited] = useState(false);
 
   const [isCategoryManagerOpen, setIsCategoryManagerOpen] = useState(false);
+  const [isBrandManagerOpen, setIsBrandManagerOpen] = useState(false);
   const [imageProduct, setImageProduct] = useState(null);
   const [variantProduct, setVariantProduct] = useState(null);
 
@@ -283,6 +294,15 @@ function StaffProductListPage() {
 
           <button
             type="button"
+            onClick={() => setIsBrandManagerOpen(true)}
+            className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-neutral-300 bg-white px-5 text-sm font-bold text-neutral-800 hover:bg-neutral-100"
+          >
+            <Tag className="size-4" />
+            Brands
+          </button>
+
+          <button
+            type="button"
             onClick={openCreateForm}
             className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-black px-5 text-sm font-bold text-white hover:bg-neutral-800"
           >
@@ -466,12 +486,22 @@ function StaffProductListPage() {
             </div>
 
             <div>
-              <label
-                htmlFor="staff-product-brand"
-                className="text-sm font-semibold text-neutral-800"
-              >
-                Brand
-              </label>
+              <div className="flex items-center justify-between gap-3">
+                <label
+                  htmlFor="staff-product-brand"
+                  className="text-sm font-semibold text-neutral-800"
+                >
+                  Brand
+                </label>
+
+                <button
+                  type="button"
+                  onClick={() => setIsBrandManagerOpen(true)}
+                  className="text-xs font-bold text-neutral-600 hover:text-black hover:underline"
+                >
+                  Manage brands
+                </button>
+              </div>
 
               <select
                 id="staff-product-brand"
@@ -770,6 +800,10 @@ function StaffProductListPage() {
 
       {isCategoryManagerOpen && (
         <StaffCategoryManager onClose={() => setIsCategoryManagerOpen(false)} />
+      )}
+
+      {isBrandManagerOpen && (
+        <StaffBrandManager onClose={() => setIsBrandManagerOpen(false)} />
       )}
 
       {imageProduct && (
