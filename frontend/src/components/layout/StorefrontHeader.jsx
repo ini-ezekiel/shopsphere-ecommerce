@@ -9,7 +9,7 @@ import {
   X,
 } from "lucide-react";
 import { useState } from "react";
-import { Link, useNavigate } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 
 import { getCart } from "../../api/cart";
 import { useAuth } from "../../features/auth/AuthContext";
@@ -32,13 +32,15 @@ function CountBadge({ count, showZero = false }) {
 
 function StorefrontHeader() {
   const navigate = useNavigate();
+  const { pathname } = useLocation();
 
   const { isAuthenticated, logout } = useAuth();
-
   const { unreadCount } = useNotifications();
 
   const [searchTerm, setSearchTerm] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const showSearch = pathname !== "/about";
 
   const { data: cart } = useQuery({
     queryKey: ["cart"],
@@ -85,31 +87,33 @@ function StorefrontHeader() {
           </nav>
 
           {/* Desktop and tablet search */}
-          <form
-            role="search"
-            onSubmit={handleSearch}
-            className="ml-auto hidden w-full max-w-md md:block"
-          >
-            <label htmlFor="desktop-product-search" className="sr-only">
-              Search ShopSphere products
-            </label>
+          {showSearch && (
+            <form
+              role="search"
+              onSubmit={handleSearch}
+              className="ml-auto hidden w-full max-w-md md:block"
+            >
+              <label htmlFor="desktop-product-search" className="sr-only">
+                Search ShopSphere products
+              </label>
 
-            <div className="relative">
-              <Search
-                aria-hidden="true"
-                className="pointer-events-none absolute left-4 top-1/2 size-5 -translate-y-1/2 text-neutral-500"
-              />
+              <div className="relative">
+                <Search
+                  aria-hidden="true"
+                  className="pointer-events-none absolute left-4 top-1/2 size-5 -translate-y-1/2 text-neutral-500"
+                />
 
-              <input
-                id="desktop-product-search"
-                type="search"
-                value={searchTerm}
-                onChange={(event) => setSearchTerm(event.target.value)}
-                placeholder="Search products"
-                className="min-h-11 w-full rounded-full border border-neutral-300 bg-neutral-50 py-2 pl-12 pr-4 text-sm outline-none transition placeholder:text-neutral-500 focus:border-black focus:bg-white"
-              />
-            </div>
-          </form>
+                <input
+                  id="desktop-product-search"
+                  type="search"
+                  value={searchTerm}
+                  onChange={(event) => setSearchTerm(event.target.value)}
+                  placeholder="Search products"
+                  className="min-h-11 w-full rounded-full border border-neutral-300 bg-neutral-50 py-2 pl-12 pr-4 text-sm outline-none transition placeholder:text-neutral-500 focus:border-black focus:bg-white"
+                />
+              </div>
+            </form>
+          )}
 
           {/* Desktop account, notifications and cart */}
           <div className="ml-auto hidden items-center gap-1 md:flex">
@@ -196,30 +200,32 @@ function StorefrontHeader() {
           </button>
         </div>
 
-        {/* Always-visible mobile search */}
-        <div className="mx-2 pb-3 md:hidden">
-          <form role="search" onSubmit={handleSearch}>
-            <label htmlFor="mobile-product-search" className="sr-only">
-              Search ShopSphere products
-            </label>
+        {/* Mobile search */}
+        {showSearch && (
+          <div className="mx-2 pb-3 md:hidden">
+            <form role="search" onSubmit={handleSearch}>
+              <label htmlFor="mobile-product-search" className="sr-only">
+                Search ShopSphere products
+              </label>
 
-            <div className="relative">
-              <Search
-                aria-hidden="true"
-                className="pointer-events-none absolute left-4 top-1/2 size-5 -translate-y-1/2 text-neutral-500"
-              />
+              <div className="relative">
+                <Search
+                  aria-hidden="true"
+                  className="pointer-events-none absolute left-4 top-1/2 size-5 -translate-y-1/2 text-neutral-500"
+                />
 
-              <input
-                id="mobile-product-search"
-                type="search"
-                value={searchTerm}
-                onChange={(event) => setSearchTerm(event.target.value)}
-                placeholder="Search products"
-                className="min-h-11 w-full rounded-full border border-neutral-300 bg-neutral-100 py-2 pl-12 pr-4 text-sm outline-none transition placeholder:text-neutral-500 focus:border-black focus:bg-white"
-              />
-            </div>
-          </form>
-        </div>
+                <input
+                  id="mobile-product-search"
+                  type="search"
+                  value={searchTerm}
+                  onChange={(event) => setSearchTerm(event.target.value)}
+                  placeholder="Search products"
+                  className="min-h-11 w-full rounded-full border border-neutral-300 bg-neutral-100 py-2 pl-12 pr-4 text-sm outline-none transition placeholder:text-neutral-500 focus:border-black focus:bg-white"
+                />
+              </div>
+            </form>
+          </div>
+        )}
 
         {/* Mobile and tablet navigation */}
         {isMenuOpen && (
@@ -234,6 +240,14 @@ function StorefrontHeader() {
                 className="rounded-xl px-4 py-3 font-semibold text-neutral-900 hover:bg-neutral-100"
               >
                 Shop all products
+              </Link>
+
+              <Link
+                to="/about"
+                onClick={() => setIsMenuOpen(false)}
+                className="rounded-xl px-4 py-3 font-semibold text-neutral-900 hover:bg-neutral-100"
+              >
+                About ShopSphere
               </Link>
 
               {isAuthenticated ? (

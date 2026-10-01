@@ -16,6 +16,7 @@ import RefundDetailPage from "../pages/account/RefundDetailPage";
 import RefundListPage from "../pages/account/RefundListPage";
 import SecurityPage from "../pages/account/SecurityPage";
 import WishlistPage from "../pages/account/WishlistPage";
+import AboutPage from "../pages/storefront/AboutPage";
 
 import ForgotPasswordPage from "../pages/auth/ForgotPasswordPage";
 import LoginPage from "../pages/auth/LoginPage";
@@ -73,6 +74,8 @@ function AppRoutes() {
       {/* Customer storefront */}
       <Route element={<StorefrontLayout />}>
         <Route index element={<HomePage />} />
+
+        <Route path="about" element={<AboutPage />} />
 
         <Route path="products" element={<ProductListPage />} />
 
