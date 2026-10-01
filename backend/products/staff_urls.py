@@ -1,0 +1,81 @@
+from django.urls import path
+
+from .views import (
+    StaffInventoryDetailView,
+    StaffInventoryListView,
+    StaffProductDetailView,
+    StaffProductListCreateView,
+    StaffProductVariantDetailView,
+    StaffProductVariantListCreateView,
+    StaffProductImageDetailView,
+    StaffProductImageListCreateView,
+    StaffBrandDetailView,
+    StaffBrandListCreateView,
+    StaffCategoryDetailView,
+    StaffCategoryListCreateView,
+)
+
+app_name = "products_staff"
+
+urlpatterns = [
+    path(
+        "products/",
+        StaffProductListCreateView.as_view(),
+        name="product-list-create",
+    ),
+    path(
+        "products/<int:pk>/",
+        StaffProductDetailView.as_view(),
+        name="product-detail",
+    ),
+    path(
+        "products/<int:product_pk>/variants/",
+        StaffProductVariantListCreateView.as_view(),
+        name="product-variant-list-create",
+    ),
+    path(
+        "variants/<int:pk>/",
+        StaffProductVariantDetailView.as_view(),
+        name="product-variant-detail",
+    ),
+    path(
+        "inventory/",
+        StaffInventoryListView.as_view(),
+        name="inventory-list",
+    ),
+    path(
+        "inventory/<int:pk>/",
+        StaffInventoryDetailView.as_view(),
+        name="inventory-detail",
+    ),
+    path(
+        "products/<int:product_pk>/images/",
+        StaffProductImageListCreateView.as_view(),
+        name="product-image-list-create",
+    ),
+    path(
+        "product-images/<int:pk>/",
+        StaffProductImageDetailView.as_view(),
+        name="product-image-detail",
+    ),
+    path(
+        "categories/",
+        StaffCategoryListCreateView.as_view(),
+        name="category-list-create",
+    ),
+    path(
+        "categories/<int:pk>/",
+        StaffCategoryDetailView.as_view(),
+        name="category-detail",
+    ),
+    path(
+        "brands/",
+        StaffBrandListCreateView.as_view(),
+        name="brand-list-create",
+    ),
+    path(
+        "brands/<int:pk>/",
+        StaffBrandDetailView.as_view(),
+        name="brand-detail",
+    ),
+]
