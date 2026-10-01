@@ -72,6 +72,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # Third party apps
     "cloudinary",
+    "anymail",
     "rest_framework",
     "rest_framework_simplejwt.token_blacklist",
     "corsheaders",
@@ -208,10 +209,7 @@ STORAGES = {
         "BACKEND": MEDIA_STORAGE_BACKEND,
     },
     "staticfiles": {
-        "BACKEND": (
-            "whitenoise.storage."
-            "CompressedManifestStaticFilesStorage"
-        ),
+        "BACKEND": ("whitenoise.storage." "CompressedManifestStaticFilesStorage"),
     },
 }
 
@@ -225,16 +223,11 @@ MAILERS = {
             "EMAIL_BACKEND",
             "django.core.mail.backends.console.EmailBackend",
         ),
-        "OPTIONS": {
-            "host": os.getenv("EMAIL_HOST", "localhost"),
-            "port": int(os.getenv("EMAIL_PORT", "587")),
-            "username": os.getenv("EMAIL_HOST_USER", ""),
-            "password": os.getenv("EMAIL_HOST_PASSWORD", ""),
-            "use_tls": env_bool("EMAIL_USE_TLS", True),
-            "use_ssl": env_bool("EMAIL_USE_SSL", False),
-        },
+        "OPTIONS": {},
     },
 }
+
+BREVO_API_KEY = os.getenv("BREVO_API_KEY", "")
 
 
 CORS_ALLOWED_ORIGINS = env_list(
@@ -303,8 +296,10 @@ SIMPLE_JWT = {
 
 DEFAULT_FROM_EMAIL = os.getenv(
     "DEFAULT_FROM_EMAIL",
-    "no-reply@ShopSphere.local",
+    "ShopSphere <shopsphere.verify.support@gmail.com>",
 )
+
+SERVER_EMAIL = DEFAULT_FROM_EMAIL
 
 FRONTEND_URL = os.getenv(
     "FRONTEND_URL",
