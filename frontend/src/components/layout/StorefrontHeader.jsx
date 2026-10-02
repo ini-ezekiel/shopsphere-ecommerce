@@ -34,7 +34,7 @@ function StorefrontHeader() {
   const navigate = useNavigate();
   const { pathname } = useLocation();
 
-  const { isAuthenticated, logout } = useAuth();
+  const { isAuthenticated, isAuthLoading, logout } = useAuth();
   const { unreadCount } = useNotifications();
 
   const [searchTerm, setSearchTerm] = useState("");
@@ -45,7 +45,7 @@ function StorefrontHeader() {
   const { data: cart } = useQuery({
     queryKey: ["cart"],
     queryFn: getCart,
-    enabled: isAuthenticated,
+    enabled: isAuthenticated && !isAuthLoading,
   });
 
   async function handleLogout() {
@@ -116,69 +116,77 @@ function StorefrontHeader() {
           )}
 
           {/* Desktop account, notifications and cart */}
-          <div className="ml-auto hidden items-center gap-1 md:flex">
-            <Link
-              to={isAuthenticated ? "/account" : "/login"}
-              aria-label={isAuthenticated ? "Open account" : "Sign in"}
-              className="flex size-11 items-center justify-center rounded-full text-neutral-900 transition hover:bg-neutral-100"
-            >
-              <UserRound aria-hidden="true" className="size-5" />
-            </Link>
+          <div className="ml-auto hidden min-h-11 items-center gap-1 md:flex">
+            {!isAuthLoading && (
+              <>
+                <Link
+                  to={isAuthenticated ? "/account" : "/login"}
+                  aria-label={isAuthenticated ? "Open account" : "Sign in"}
+                  className="flex size-11 items-center justify-center rounded-full text-neutral-900 transition hover:bg-neutral-100"
+                >
+                  <UserRound aria-hidden="true" className="size-5" />
+                </Link>
 
-            {isAuthenticated && (
-              <Link
-                to="/account/notifications"
-                aria-label={
-                  unreadCount > 0
-                    ? `Open notifications. ${unreadCount} unread.`
-                    : "Open notifications. No unread notifications."
-                }
-                className="relative flex size-11 items-center justify-center rounded-full text-neutral-900 transition hover:bg-neutral-100"
-              >
-                <Bell aria-hidden="true" className="size-5" />
+                {isAuthenticated && (
+                  <Link
+                    to="/account/notifications"
+                    aria-label={
+                      unreadCount > 0
+                        ? `Open notifications. ${unreadCount} unread.`
+                        : "Open notifications. No unread notifications."
+                    }
+                    className="relative flex size-11 items-center justify-center rounded-full text-neutral-900 transition hover:bg-neutral-100"
+                  >
+                    <Bell aria-hidden="true" className="size-5" />
+                    <CountBadge count={unreadCount} showZero />
+                  </Link>
+                )}
 
-                <CountBadge count={unreadCount} showZero />
-              </Link>
+                <Link
+                  to={isAuthenticated ? "/cart" : "/login"}
+                  aria-label={
+                    isAuthenticated ? "Open cart" : "Sign in to use cart"
+                  }
+                  className="relative flex size-11 items-center justify-center rounded-full text-neutral-900 transition hover:bg-neutral-100"
+                >
+                  <ShoppingBag aria-hidden="true" className="size-5" />
+                  <CountBadge count={cart?.total_quantity} />
+                </Link>
+              </>
             )}
-
-            <Link
-              to={isAuthenticated ? "/cart" : "/login"}
-              aria-label="Open cart"
-              className="relative flex size-11 items-center justify-center rounded-full text-neutral-900 transition hover:bg-neutral-100"
-            >
-              <ShoppingBag aria-hidden="true" className="size-5" />
-
-              <CountBadge count={cart?.total_quantity} />
-            </Link>
           </div>
 
           {/* Mobile notifications and cart */}
-          <div className="ml-auto flex items-center md:hidden">
-            {isAuthenticated && (
-              <Link
-                to="/account/notifications"
-                aria-label={
-                  unreadCount > 0
-                    ? `Open notifications. ${unreadCount} unread.`
-                    : "Open notifications. No unread notifications."
-                }
-                className="relative flex size-11 items-center justify-center rounded-full text-neutral-900 transition hover:bg-neutral-100"
-              >
-                <Bell aria-hidden="true" className="size-5" />
+          <div className="ml-auto flex min-h-11 items-center md:hidden">
+            {!isAuthLoading && (
+              <>
+                {isAuthenticated && (
+                  <Link
+                    to="/account/notifications"
+                    aria-label={
+                      unreadCount > 0
+                        ? `Open notifications. ${unreadCount} unread.`
+                        : "Open notifications. No unread notifications."
+                    }
+                    className="relative flex size-11 items-center justify-center rounded-full text-neutral-900 transition hover:bg-neutral-100"
+                  >
+                    <Bell aria-hidden="true" className="size-5" />
+                    <CountBadge count={unreadCount} showZero />
+                  </Link>
+                )}
 
-                <CountBadge count={unreadCount} showZero />
-              </Link>
+                <Link
+                  to={isAuthenticated ? "/cart" : "/login"}
+                  aria-label={
+                    isAuthenticated ? "Open cart" : "Sign in to use cart"
+                  }
+                  className="relative flex size-11 items-center justify-center rounded-full text-neutral-900 transition hover:bg-neutral-100"
+                >
+                  <ShoppingBag aria-hidden="true" className="size-5" />
+                  <CountBadge count={cart?.total_quantity} />
+                </Link>
+              </>
             )}
-
-            <Link
-              to={isAuthenticated ? "/cart" : "/login"}
-              aria-label="Open cart"
-              className="relative flex size-11 items-center justify-center rounded-full text-neutral-900 transition hover:bg-neutral-100"
-            >
-              <ShoppingBag aria-hidden="true" className="size-5" />
-
-              <CountBadge count={cart?.total_quantity} />
-            </Link>
           </div>
 
           {/* Mobile and tablet menu button */}
@@ -250,7 +258,14 @@ function StorefrontHeader() {
                 About ShopSphere
               </Link>
 
-              {isAuthenticated ? (
+              {isAuthLoading ? (
+                <span
+                  role="status"
+                  className="rounded-xl px-4 py-3 font-semibold text-neutral-500"
+                >
+                  Checking account...
+                </span>
+              ) : isAuthenticated ? (
                 <>
                   <Link
                     to="/account"
