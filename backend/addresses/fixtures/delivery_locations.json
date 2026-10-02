@@ -1,0 +1,1237 @@
+[
+{
+  "model": "addresses.deliverylocation",
+  "pk": 1,
+  "fields": {
+    "state": "Abia",
+    "city": "Umuahia",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.527Z",
+    "updated_at": "2026-09-24T19:35:25.528Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 2,
+  "fields": {
+    "state": "Abia",
+    "city": "Aba",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.539Z",
+    "updated_at": "2026-09-24T19:35:25.539Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 3,
+  "fields": {
+    "state": "Adamawa",
+    "city": "Yola",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.543Z",
+    "updated_at": "2026-09-24T19:35:25.543Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 4,
+  "fields": {
+    "state": "Adamawa",
+    "city": "Mubi",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.546Z",
+    "updated_at": "2026-09-24T19:35:25.546Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 5,
+  "fields": {
+    "state": "Akwa Ibom",
+    "city": "Uyo",
+    "shipping_fee": "2500.00",
+    "estimated_delivery_days": 2,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.548Z",
+    "updated_at": "2026-09-24T19:35:25.548Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 6,
+  "fields": {
+    "state": "Akwa Ibom",
+    "city": "Eket",
+    "shipping_fee": "2500.00",
+    "estimated_delivery_days": 2,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.550Z",
+    "updated_at": "2026-09-24T19:35:25.550Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 7,
+  "fields": {
+    "state": "Akwa Ibom",
+    "city": "Ikot Ekpene",
+    "shipping_fee": "2500.00",
+    "estimated_delivery_days": 2,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.553Z",
+    "updated_at": "2026-09-24T19:35:25.553Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 8,
+  "fields": {
+    "state": "Akwa Ibom",
+    "city": "Oron",
+    "shipping_fee": "2500.00",
+    "estimated_delivery_days": 2,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.555Z",
+    "updated_at": "2026-09-24T19:35:25.555Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 9,
+  "fields": {
+    "state": "Anambra",
+    "city": "Awka",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.557Z",
+    "updated_at": "2026-09-24T19:35:25.557Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 10,
+  "fields": {
+    "state": "Anambra",
+    "city": "Onitsha",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.561Z",
+    "updated_at": "2026-09-24T19:35:25.561Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 11,
+  "fields": {
+    "state": "Anambra",
+    "city": "Nnewi",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.565Z",
+    "updated_at": "2026-09-24T19:35:25.565Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 12,
+  "fields": {
+    "state": "Bauchi",
+    "city": "Bauchi",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.568Z",
+    "updated_at": "2026-09-24T19:35:25.568Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 13,
+  "fields": {
+    "state": "Bauchi",
+    "city": "Azare",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.571Z",
+    "updated_at": "2026-09-24T19:35:25.571Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 14,
+  "fields": {
+    "state": "Bayelsa",
+    "city": "Yenagoa",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.574Z",
+    "updated_at": "2026-09-24T19:35:25.574Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 15,
+  "fields": {
+    "state": "Bayelsa",
+    "city": "Brass",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.578Z",
+    "updated_at": "2026-09-24T19:35:25.578Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 16,
+  "fields": {
+    "state": "Benue",
+    "city": "Makurdi",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.581Z",
+    "updated_at": "2026-09-24T19:35:25.581Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 17,
+  "fields": {
+    "state": "Benue",
+    "city": "Gboko",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.584Z",
+    "updated_at": "2026-09-24T19:35:25.584Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 18,
+  "fields": {
+    "state": "Benue",
+    "city": "Otukpo",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.586Z",
+    "updated_at": "2026-09-24T19:35:25.586Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 19,
+  "fields": {
+    "state": "Borno",
+    "city": "Maiduguri",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.589Z",
+    "updated_at": "2026-09-24T19:35:25.589Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 20,
+  "fields": {
+    "state": "Borno",
+    "city": "Biu",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.593Z",
+    "updated_at": "2026-09-24T19:35:25.593Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 21,
+  "fields": {
+    "state": "Cross River",
+    "city": "Calabar",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.595Z",
+    "updated_at": "2026-09-24T19:35:25.595Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 22,
+  "fields": {
+    "state": "Cross River",
+    "city": "Ikom",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.598Z",
+    "updated_at": "2026-09-24T19:35:25.598Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 23,
+  "fields": {
+    "state": "Cross River",
+    "city": "Ogoja",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.601Z",
+    "updated_at": "2026-09-24T19:35:25.601Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 24,
+  "fields": {
+    "state": "Delta",
+    "city": "Asaba",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.605Z",
+    "updated_at": "2026-09-24T19:35:25.605Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 25,
+  "fields": {
+    "state": "Delta",
+    "city": "Warri",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.608Z",
+    "updated_at": "2026-09-24T19:35:25.608Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 26,
+  "fields": {
+    "state": "Delta",
+    "city": "Sapele",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.612Z",
+    "updated_at": "2026-09-24T19:35:25.612Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 27,
+  "fields": {
+    "state": "Delta",
+    "city": "Ughelli",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.616Z",
+    "updated_at": "2026-09-24T19:35:25.616Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 28,
+  "fields": {
+    "state": "Ebonyi",
+    "city": "Abakaliki",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.619Z",
+    "updated_at": "2026-09-24T19:35:25.619Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 29,
+  "fields": {
+    "state": "Ebonyi",
+    "city": "Afikpo",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.623Z",
+    "updated_at": "2026-09-24T19:35:25.623Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 30,
+  "fields": {
+    "state": "Edo",
+    "city": "Benin City",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.626Z",
+    "updated_at": "2026-09-24T19:35:25.626Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 31,
+  "fields": {
+    "state": "Edo",
+    "city": "Auchi",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.630Z",
+    "updated_at": "2026-09-24T19:35:25.630Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 32,
+  "fields": {
+    "state": "Edo",
+    "city": "Ekpoma",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.633Z",
+    "updated_at": "2026-09-24T19:35:25.633Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 33,
+  "fields": {
+    "state": "Ekiti",
+    "city": "Ado-Ekiti",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.636Z",
+    "updated_at": "2026-09-24T19:35:25.636Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 34,
+  "fields": {
+    "state": "Ekiti",
+    "city": "Ikere-Ekiti",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.640Z",
+    "updated_at": "2026-09-24T19:35:25.640Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 35,
+  "fields": {
+    "state": "Enugu",
+    "city": "Enugu",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.644Z",
+    "updated_at": "2026-09-24T19:35:25.644Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 36,
+  "fields": {
+    "state": "Enugu",
+    "city": "Nsukka",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.647Z",
+    "updated_at": "2026-09-24T19:35:25.647Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 37,
+  "fields": {
+    "state": "FCT",
+    "city": "Abuja",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.651Z",
+    "updated_at": "2026-09-24T19:35:25.651Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 38,
+  "fields": {
+    "state": "Gombe",
+    "city": "Gombe",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.654Z",
+    "updated_at": "2026-09-24T19:35:25.654Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 39,
+  "fields": {
+    "state": "Gombe",
+    "city": "Billiri",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.657Z",
+    "updated_at": "2026-09-24T19:35:25.657Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 40,
+  "fields": {
+    "state": "Imo",
+    "city": "Owerri",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.661Z",
+    "updated_at": "2026-09-24T19:35:25.661Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 41,
+  "fields": {
+    "state": "Imo",
+    "city": "Orlu",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.665Z",
+    "updated_at": "2026-09-24T19:35:25.665Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 42,
+  "fields": {
+    "state": "Imo",
+    "city": "Okigwe",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.668Z",
+    "updated_at": "2026-09-24T19:35:25.668Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 43,
+  "fields": {
+    "state": "Jigawa",
+    "city": "Dutse",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.672Z",
+    "updated_at": "2026-09-24T19:35:25.672Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 44,
+  "fields": {
+    "state": "Jigawa",
+    "city": "Hadejia",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.676Z",
+    "updated_at": "2026-09-24T19:35:25.676Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 45,
+  "fields": {
+    "state": "Kaduna",
+    "city": "Kaduna",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.680Z",
+    "updated_at": "2026-09-24T19:35:25.680Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 46,
+  "fields": {
+    "state": "Kaduna",
+    "city": "Zaria",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.683Z",
+    "updated_at": "2026-09-24T19:35:25.683Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 47,
+  "fields": {
+    "state": "Kaduna",
+    "city": "Kafanchan",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.687Z",
+    "updated_at": "2026-09-24T19:35:25.687Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 48,
+  "fields": {
+    "state": "Kano",
+    "city": "Kano",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.690Z",
+    "updated_at": "2026-09-24T19:35:25.690Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 49,
+  "fields": {
+    "state": "Kano",
+    "city": "Wudil",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.695Z",
+    "updated_at": "2026-09-24T19:35:25.695Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 50,
+  "fields": {
+    "state": "Katsina",
+    "city": "Katsina",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.699Z",
+    "updated_at": "2026-09-24T19:35:25.699Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 51,
+  "fields": {
+    "state": "Katsina",
+    "city": "Daura",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.702Z",
+    "updated_at": "2026-09-24T19:35:25.702Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 52,
+  "fields": {
+    "state": "Kebbi",
+    "city": "Birnin Kebbi",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.705Z",
+    "updated_at": "2026-09-24T19:35:25.706Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 53,
+  "fields": {
+    "state": "Kebbi",
+    "city": "Argungu",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.711Z",
+    "updated_at": "2026-09-24T19:35:25.711Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 54,
+  "fields": {
+    "state": "Kogi",
+    "city": "Lokoja",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.715Z",
+    "updated_at": "2026-09-24T19:35:25.715Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 55,
+  "fields": {
+    "state": "Kogi",
+    "city": "Okene",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.718Z",
+    "updated_at": "2026-09-24T19:35:25.718Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 56,
+  "fields": {
+    "state": "Kwara",
+    "city": "Ilorin",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.722Z",
+    "updated_at": "2026-09-24T19:35:25.722Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 57,
+  "fields": {
+    "state": "Kwara",
+    "city": "Offa",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.727Z",
+    "updated_at": "2026-09-24T19:35:25.727Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 58,
+  "fields": {
+    "state": "Lagos",
+    "city": "Ikeja",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.731Z",
+    "updated_at": "2026-09-24T19:35:25.731Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 59,
+  "fields": {
+    "state": "Lagos",
+    "city": "Lagos",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.735Z",
+    "updated_at": "2026-09-24T19:35:25.735Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 60,
+  "fields": {
+    "state": "Lagos",
+    "city": "Ikorodu",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.738Z",
+    "updated_at": "2026-09-24T19:35:25.738Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 61,
+  "fields": {
+    "state": "Lagos",
+    "city": "Epe",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.742Z",
+    "updated_at": "2026-09-24T19:35:25.742Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 62,
+  "fields": {
+    "state": "Lagos",
+    "city": "Badagry",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.747Z",
+    "updated_at": "2026-09-24T19:35:25.748Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 63,
+  "fields": {
+    "state": "Nasarawa",
+    "city": "Lafia",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.751Z",
+    "updated_at": "2026-09-24T19:35:25.751Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 64,
+  "fields": {
+    "state": "Nasarawa",
+    "city": "Keffi",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.755Z",
+    "updated_at": "2026-09-24T19:35:25.755Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 65,
+  "fields": {
+    "state": "Nasarawa",
+    "city": "Akwanga",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.760Z",
+    "updated_at": "2026-09-24T19:35:25.760Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 66,
+  "fields": {
+    "state": "Niger",
+    "city": "Minna",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.764Z",
+    "updated_at": "2026-09-24T19:35:25.764Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 67,
+  "fields": {
+    "state": "Niger",
+    "city": "Bida",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.768Z",
+    "updated_at": "2026-09-24T19:35:25.768Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 68,
+  "fields": {
+    "state": "Niger",
+    "city": "Suleja",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.771Z",
+    "updated_at": "2026-09-24T19:35:25.771Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 69,
+  "fields": {
+    "state": "Ogun",
+    "city": "Abeokuta",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.775Z",
+    "updated_at": "2026-09-24T19:35:25.775Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 70,
+  "fields": {
+    "state": "Ogun",
+    "city": "Ijebu-Ode",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.780Z",
+    "updated_at": "2026-09-24T19:35:25.780Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 71,
+  "fields": {
+    "state": "Ogun",
+    "city": "Sagamu",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.783Z",
+    "updated_at": "2026-09-24T19:35:25.783Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 72,
+  "fields": {
+    "state": "Ogun",
+    "city": "Ota",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.787Z",
+    "updated_at": "2026-09-24T19:35:25.787Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 73,
+  "fields": {
+    "state": "Ondo",
+    "city": "Akure",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.791Z",
+    "updated_at": "2026-09-24T19:35:25.791Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 74,
+  "fields": {
+    "state": "Ondo",
+    "city": "Ondo City",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.795Z",
+    "updated_at": "2026-09-24T19:35:25.795Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 75,
+  "fields": {
+    "state": "Ondo",
+    "city": "Owo",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.799Z",
+    "updated_at": "2026-09-24T19:35:25.799Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 76,
+  "fields": {
+    "state": "Osun",
+    "city": "Osogbo",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.802Z",
+    "updated_at": "2026-09-24T19:35:25.802Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 77,
+  "fields": {
+    "state": "Osun",
+    "city": "Ile-Ife",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.806Z",
+    "updated_at": "2026-09-24T19:35:25.806Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 78,
+  "fields": {
+    "state": "Osun",
+    "city": "Ilesa",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.811Z",
+    "updated_at": "2026-09-24T19:35:25.811Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 79,
+  "fields": {
+    "state": "Oyo",
+    "city": "Ibadan",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.815Z",
+    "updated_at": "2026-09-24T19:35:25.815Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 80,
+  "fields": {
+    "state": "Oyo",
+    "city": "Ogbomoso",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.818Z",
+    "updated_at": "2026-09-24T19:35:25.818Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 81,
+  "fields": {
+    "state": "Oyo",
+    "city": "Oyo",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.822Z",
+    "updated_at": "2026-09-24T19:35:25.822Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 82,
+  "fields": {
+    "state": "Plateau",
+    "city": "Jos",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.828Z",
+    "updated_at": "2026-09-24T19:35:25.828Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 83,
+  "fields": {
+    "state": "Plateau",
+    "city": "Pankshin",
+    "shipping_fee": "4000.00",
+    "estimated_delivery_days": 5,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.831Z",
+    "updated_at": "2026-09-24T19:35:25.831Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 84,
+  "fields": {
+    "state": "Rivers",
+    "city": "Port Harcourt",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.834Z",
+    "updated_at": "2026-09-24T19:35:25.834Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 85,
+  "fields": {
+    "state": "Rivers",
+    "city": "Bonny",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.838Z",
+    "updated_at": "2026-09-24T19:35:25.838Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 86,
+  "fields": {
+    "state": "Rivers",
+    "city": "Bori",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.842Z",
+    "updated_at": "2026-09-24T19:35:25.842Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 87,
+  "fields": {
+    "state": "Rivers",
+    "city": "Okrika",
+    "shipping_fee": "3500.00",
+    "estimated_delivery_days": 4,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.845Z",
+    "updated_at": "2026-09-24T19:35:25.845Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 88,
+  "fields": {
+    "state": "Sokoto",
+    "city": "Sokoto",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.849Z",
+    "updated_at": "2026-09-24T19:35:25.849Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 89,
+  "fields": {
+    "state": "Sokoto",
+    "city": "Tambuwal",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.853Z",
+    "updated_at": "2026-09-24T19:35:25.853Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 90,
+  "fields": {
+    "state": "Taraba",
+    "city": "Jalingo",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.856Z",
+    "updated_at": "2026-09-24T19:35:25.856Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 91,
+  "fields": {
+    "state": "Taraba",
+    "city": "Wukari",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.860Z",
+    "updated_at": "2026-09-24T19:35:25.860Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 92,
+  "fields": {
+    "state": "Yobe",
+    "city": "Damaturu",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.864Z",
+    "updated_at": "2026-09-24T19:35:25.864Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 93,
+  "fields": {
+    "state": "Yobe",
+    "city": "Potiskum",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.867Z",
+    "updated_at": "2026-09-24T19:35:25.867Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 94,
+  "fields": {
+    "state": "Zamfara",
+    "city": "Gusau",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.871Z",
+    "updated_at": "2026-09-24T19:35:25.871Z"
+  }
+},
+{
+  "model": "addresses.deliverylocation",
+  "pk": 95,
+  "fields": {
+    "state": "Zamfara",
+    "city": "Kaura Namoda",
+    "shipping_fee": "4500.00",
+    "estimated_delivery_days": 7,
+    "is_active": true,
+    "created_at": "2026-09-24T19:35:25.874Z",
+    "updated_at": "2026-09-24T19:35:25.874Z"
+  }
+}
+]
