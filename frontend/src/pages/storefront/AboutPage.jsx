@@ -8,6 +8,8 @@ import {
 } from "lucide-react";
 import { Link } from "react-router";
 
+import { useAuth } from "../../features/auth/AuthContext";
+
 const values = [
   {
     title: "Thoughtful selection",
@@ -38,6 +40,8 @@ const promises = [
 ];
 
 function AboutPage() {
+  const { isAuthenticated, isAuthLoading } = useAuth();
+
   return (
     <>
       <section className="bg-black text-white">
@@ -60,7 +64,7 @@ function AboutPage() {
             className="mt-10 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-white px-7 font-bold text-black transition hover:bg-neutral-200"
           >
             Explore products
-            <ArrowRight className="size-5" />
+            <ArrowRight aria-hidden="true" className="size-5" />
           </Link>
         </div>
       </section>
@@ -120,7 +124,7 @@ function AboutPage() {
                 className="rounded-2xl border border-neutral-200 bg-white p-6 sm:p-7"
               >
                 <div className="flex size-12 items-center justify-center rounded-full bg-black text-white">
-                  <Icon className="size-5" />
+                  <Icon aria-hidden="true" className="size-5" />
                 </div>
 
                 <h3 className="mt-6 text-xl font-bold">{title}</h3>
@@ -151,7 +155,10 @@ function AboutPage() {
               an experience that respects your time.
             </p>
 
-            <ShoppingBag className="mt-10 size-10 text-neutral-400" />
+            <ShoppingBag
+              aria-hidden="true"
+              className="mt-10 size-10 text-neutral-400"
+            />
           </div>
 
           <div className="bg-neutral-900 p-7 sm:p-10 lg:p-14">
@@ -163,7 +170,11 @@ function AboutPage() {
                   key={promise}
                   className="flex items-start gap-3 text-sm leading-6 text-neutral-300"
                 >
-                  <CheckCircle2 className="mt-0.5 size-5 shrink-0 text-white" />
+                  <CheckCircle2
+                    aria-hidden="true"
+                    className="mt-0.5 size-5 shrink-0 text-white"
+                  />
+
                   <span>{promise}</span>
                 </p>
               ))}
@@ -182,21 +193,31 @@ function AboutPage() {
             </h2>
           </div>
 
-          <div className="flex flex-wrap gap-3">
+          <div className="flex min-h-12 flex-wrap gap-3">
             <Link
               to="/products"
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-black px-7 font-bold text-white hover:bg-neutral-800"
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-black px-7 font-bold text-white transition hover:bg-neutral-800"
             >
               Shop products
-              <ArrowRight className="size-5" />
+              <ArrowRight aria-hidden="true" className="size-5" />
             </Link>
 
-            <Link
-              to="/register"
-              className="inline-flex min-h-12 items-center justify-center rounded-full border border-neutral-300 px-7 font-bold text-neutral-900 hover:bg-neutral-100"
-            >
-              Create an account
-            </Link>
+            {!isAuthLoading &&
+              (isAuthenticated ? (
+                <Link
+                  to="/account"
+                  className="inline-flex min-h-12 items-center justify-center rounded-full border border-neutral-300 px-7 font-bold text-neutral-900 transition hover:bg-neutral-100"
+                >
+                  My account
+                </Link>
+              ) : (
+                <Link
+                  to="/register"
+                  className="inline-flex min-h-12 items-center justify-center rounded-full border border-neutral-300 px-7 font-bold text-neutral-900 transition hover:bg-neutral-100"
+                >
+                  Create an account
+                </Link>
+              ))}
           </div>
         </div>
       </section>
