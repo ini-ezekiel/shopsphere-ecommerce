@@ -40,7 +40,16 @@ function StorefrontHeader() {
   const [searchTerm, setSearchTerm] = useState("");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const showSearch = pathname !== "/about";
+  const searchHiddenPaths = [
+    "/about",
+    "/cart",
+    "/checkout",
+    "/payment/callback",
+  ];
+
+  const showSearch = !searchHiddenPaths.some(
+    (path) => pathname === path || pathname.startsWith(`${path}/`),
+  );
 
   const { data: cart } = useQuery({
     queryKey: ["cart"],
