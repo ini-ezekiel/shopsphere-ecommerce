@@ -20,6 +20,13 @@ def validate_image_size(image):
 
 
 def validate_image_content(image):
+    if not image:
+        return
+
+    # Skip existing stored images; validate new uploads.
+    if getattr(image, "_committed", False):
+        return
+
     allowed_formats = {"JPEG", "PNG", "WEBP"}
 
     try:
@@ -30,7 +37,9 @@ def validate_image_content(image):
             width, height = opened_image.size
 
             if image_format not in allowed_formats:
-                raise ValidationError("Only JPEG, PNG, and WebP images are allowed.")
+                raise ValidationError(
+                    "Only JPEG, PNG, and WebP images are allowed."
+                )
 
             if width < 300 or height < 300:
                 raise ValidationError(
@@ -48,7 +57,9 @@ def validate_image_content(image):
         OSError,
         SyntaxError,
     ) as error:
-        raise ValidationError("Upload a valid, non-corrupted image.") from error
+        raise ValidationError(
+            "Upload a valid, non-corrupted image."
+        ) from error
 
     finally:
         try:
