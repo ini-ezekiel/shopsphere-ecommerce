@@ -14,7 +14,7 @@ function HomePage() {
     queryKey: ["categories"],
     queryFn: getCategories,
   });
-  const products = (data?.results ?? []).slice(0, 5);
+  const products = data?.results ?? [];
 
   return (
     <>
