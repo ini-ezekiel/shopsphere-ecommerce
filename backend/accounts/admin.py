@@ -6,6 +6,7 @@ from .models import EmailVerificationToken, User
 
 @admin.register(User)
 class CustomUserAdmin(UserAdmin):
+    list_display_links = ["id", "email"]
     list_display = [
         "id",
         "email",
