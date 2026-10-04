@@ -7,10 +7,16 @@ from PIL import Image, UnidentifiedImageError
 
 
 def validate_image_size(image):
-    max_size = 5 * 1024 * 1024  # 5 MB
+    if not image:
+        return
+
+    if getattr(image, "_committed", False):
+        return
+
+    max_size = 5 * 1024 * 1024
 
     if image.size > max_size:
-        raise ValidationError("Image size cannot exceed 5 MB.")
+        raise ValidationError("Image size must not exceed 5 MB.")
 
 
 def validate_image_content(image):
